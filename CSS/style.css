@@ -71,7 +71,7 @@ button {
   font-weight: var(--Medium);
   background-color: var(--primary) !important;
   color: var(--pure-white);
-  border: 1px solid var(--primary) !important;
+  border: 0px solid var(--primary) !important;
   border-radius: 5px !important;
   padding: 8px 0px !important;
   text-transform: uppercase !important;
@@ -99,6 +99,8 @@ form button:hover {
 button > a {
   color: var(--pure-white) !important;
   padding: 8px 20px !important;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
 }
 
 button:hover, button>a:hover {
@@ -185,8 +187,8 @@ body {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(1.5rem) * .5);
-  padding-left: calc(var(0) * .5);
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
   margin-right: auto;
   margin-left: auto;
 }
@@ -209,17 +211,20 @@ body {
   background-color: var(--secondary) !important;
   color: var(--pure-white) !important;
   background-color: transparent !important;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
 }
 .button-secondary{
-  border: 1px solid var(--secondary) !important;
+  border: 0px solid var(--secondary) !important;
   background-color: var(--secondary) !important;
 }
 .button-secondary:hover{
-  border: 1px solid var(--secondary) !important;
+  border: 0px solid var(--secondary) !important;
 }
 .button-secondary-link:hover{
   background-color: transparent !important;
   color: var(--secondary) !important;
+  border-color: var(--secondary);
 }
 /* -------------------------------------signup Loginpage--------------------------------- */
 .form-col {
@@ -350,7 +355,12 @@ body {
 }
 
 .howItWorks {
-  margin: 80px 0;
+  margin: 120px 0;
+}
+@media(max-width: 992px){
+  .howItWorks {
+    margin: 80px 0;
+  }
 }
 .howItWorks .icon-box{
   padding: 5px;
@@ -369,10 +379,15 @@ body {
 }
 
 .Learning{
-  margin: 80px 0;
+  margin: 120px 0;
   padding: 40px 0;
   position: relative;
 
+}
+@media(max-width: 992px){
+  .Learning{
+    margin: 80px 0;
+  }
 }
 
 .Learning::before{
@@ -407,9 +422,14 @@ body {
 }
 
 .businessClasses{
-  margin: 80px 0;
+  margin: 120px 0;
   padding: 40px 0;
   position: relative;
+}
+@media(max-width: 992px){
+  .businessClasses{
+    margin: 80px 0;
+  }
 }
 .businessClasses::before{
   content: "";
@@ -522,9 +542,14 @@ z-index: -1;
 }
 
 .success{
-  margin: 120px 0;
+  margin: 140px 0;
   padding: 40px 0;
   background-color: var(--bg);
+}
+@media(max-width: 992px){
+  .success{
+    margin: 80px 0;
+  }
 }
 .success h2{
   font-weight: var(--Bold) !important;
@@ -546,4 +571,32 @@ z-index: -1;
   top: 50%;
   transform: translateY(-50%);
   background-size: contain;
+}
+
+/* ***************************Feature Page*************************** */
+.features-hero{
+  margin-top: 80px;
+}
+.features-hero .row{
+  background: url('../Assets/english\ teacher-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.features-hero .row>:nth-child(2){
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px;
+}
+.features-success{
+  margin: 120px 0;
+}
+@media(max-width: 992px){
+  .features-success{
+    margin: 80px 0;
+  }
+}
+@media(max-width: 767px){
+  .features-success .row{
+    flex-direction: column-reverse;
+  }
 }
