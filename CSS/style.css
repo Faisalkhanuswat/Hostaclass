@@ -210,21 +210,22 @@ body {
 .button-secondary-link{
   background-color: var(--secondary) !important;
   color: var(--pure-white) !important;
-  background-color: transparent !important;
-  border: 1px solid var(--secondary);
+  background-color: var(--secondary) !important;
+  border: 1px solid var(--secondary) !important;
   border-radius: 5px;
 }
 .button-secondary{
-  border: 0px solid var(--secondary) !important;
-  background-color: var(--secondary) !important;
+  border: 0px !important;
+  background-color: transparent !important;
 }
 .button-secondary:hover{
-  border: 0px solid var(--secondary) !important;
+  border: 0px !important;
+  color: var(--secondary) !important;
 }
 .button-secondary-link:hover{
   background-color: transparent !important;
   color: var(--secondary) !important;
-  border-color: var(--secondary);
+  border: 1px solid var(--secondary) !important;
 }
 /* -------------------------------------signup Loginpage--------------------------------- */
 .form-col {
@@ -577,6 +578,9 @@ z-index: -1;
 .features-hero{
   margin-top: 80px;
 }
+.features-success h2{
+  font-weight: var(--Bold) !important;
+}
 .features-hero .row{
   background: url('../Assets/english\ teacher-bg.jpg');
   background-position: center;
@@ -599,4 +603,147 @@ z-index: -1;
   .features-success .row{
     flex-direction: column-reverse;
   }
+}
+.create-school h2{
+  font-weight: var(--Bold) !important;
+}
+.features-cards{
+  margin: 120px 0;
+}
+@media(max-width:1024px){
+  .features-cards{
+    margin: 80px 0;
+  }
+}
+.features-cards .card-item{
+  background: var(--bg);
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.features-cards .card-item h5{
+  border-bottom: 2px solid var(--secondary);
+  margin-bottom: 20px;
+}
+.features-cards .card-item p{
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.feature-insertQuote{
+  margin: 120px 0;
+  padding: 40px 0;
+  position: relative;
+}
+@media(max-width: 992px){
+  .feature-insertQuote{
+    margin: 80px 0;
+  }
+}
+.feature-insertQuote::before{
+  content: "";
+  width: 55%;
+  height: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  box-shadow: 8px -8px 0px 0px var(--secondary);
+}
+@media (max-width: 767px){
+  .feature-insertQuote::before{
+  width: 100% !important;
+  }
+}
+
+.features-customize h2{
+  font-weight: var(--Bold);
+}
+
+.features-support{
+  margin: 120px 0;
+  padding: 40px 0;
+}
+@media(max-width: 992px){
+  .features-support{
+    margin: 80px 0;
+  }
+}
+.features-support h2{
+  font-weight: var(--Bold);
+}
+.features-support:before{
+  content: "";
+  width: 65%;
+  height: 100%;
+  background-color: var(--bg);
+  border-radius: 0 2rem 2rem 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+@media(max-width: 767px){
+  .features-support:before{
+    width: 100%;
+  }
+  .features-support .row{
+    flex-direction: column-reverse;
+  }
+}
+.features-support .row h5{
+  transform: translateY(24px);
+}
+.features-support .row img{
+  border-radius: 2rem;
+}
+.features-learning{
+  padding: 40px;
+}
+.features-learning::before{
+  content: "";
+  width: 55%;
+  height: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  box-shadow: -8px -8px 0px 0px var(--secondary);
+}
+@media (max-width: 767px){
+  .features-learning::before{
+  width: 100% !important;
+  }
+  .features-learning .row{
+    flex-direction: column-reverse;
+  }
+}
+
+.features-GrowBussiness{
+  margin: 120px 0;
+}
+@media (max-width: 992px){
+  .features-GrowBussiness{
+    margin: 80px 0;
+  }
+}
+.features-GrowBussiness h3{
+  font-weight: var(--Bold);
+}
+
+.features-Manage{
+  margin-bottom: 120px;
+}
+@media (max-width: 992px){
+  .features-Manage{
+    margin-bottom: 80px;
+  }
+}
+.features-Manage h3{
+  font-weight: var(--Bold);
 }
