@@ -430,8 +430,17 @@ body {
     color: var(--primary);
 }
 
+.articles .single-item {
+    height: 100%;
+    display: grid;
+}
+
 .articles .single-item h5 {
     margin: 20px 0 60px 0;
+}
+
+.articles .single-item .meta {
+    margin-top: auto;
 }
 
 .articles .single-item .meta .author_img {
