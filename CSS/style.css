@@ -1046,6 +1046,7 @@ body {
   font-weight: var(--Regular) !important;
   border-bottom: 2px solid black;
   text-align: center;
+  color: var(--black-text) !important;
 }
 
 .features-features table thead>tr>:first-child {
@@ -1055,6 +1056,7 @@ body {
 .features-features table tbody>tr>th {
   font-size: 18px;
   font-weight: var(--Regular) !important;
+  color: var(--black-text) !important;
 }
 
 .features-features table tbody>tr>td {

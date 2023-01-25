@@ -429,3 +429,26 @@ body {
     text-align: center;
     color: var(--primary);
 }
+
+.articles .single-item h5 {
+    margin: 20px 0 60px 0;
+}
+
+.articles .single-item .meta .author_img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.articles .single-item .meta .author_img>img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.articles .single-item .meta .author_content {
+    margin-left: 20px;
+}
+
+.articles .single-item .meta .author_content h6 {
+    margin-bottom: 0 !important;
+}
