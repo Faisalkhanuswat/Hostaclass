@@ -382,6 +382,7 @@ body {
 /* ---------------------homepage------------------------- */
 .home-hero {
   margin-top: 80px;
+  padding-top: 80px;
 }
 
 .home-hero .bg-text {
@@ -407,11 +408,18 @@ body {
 
 .howItWorks {
   margin: 120px 0;
+  padding: 100px 0;
 }
 
 @media(max-width: 992px) {
   .howItWorks {
     margin: 80px 0;
+    padding: 0;
+  }
+}
+@media (max-width: 1440px){
+  .howItWorks {
+    padding: 0;
   }
 }
 
@@ -667,11 +675,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 400px;
 }
 
 .features-hero .row>:nth-child(2) {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 40px 20px;
+  display: grid;
+  place-content: center;
+
 }
 
 .features-success {
@@ -906,7 +918,11 @@ body {
 .pricing-plans h3 {
   color: var(--primary);
 }
-
+@media (max-width: 992px){
+  .pricing-plans h3 {
+    text-align: center;
+  }
+}
 .pricing-plans .switch>div {
   background-color: var(--bg);
   border-radius: 1rem;
@@ -1162,16 +1178,28 @@ body {
     margin: 80px 0;
   }
 }
-
+.about-support{
+  padding: 40px 0;
+}
+@media (max-width: 1400px){
+  .about-support{
+    padding: 0;
+  }
+}
 .about-support .row {
   background-color: var(--bg);
   padding: 10px 0 !important;
 }
-
 .about-customize {
   margin: 120px 0;
+  padding: 80px 0;
 }
 
+@media (max-width: 1400px) {
+  .about-customize {
+   padding: 0;
+  }
+}
 @media (max-width: 992px) {
   .about-customize {
     margin: 80px 0;
